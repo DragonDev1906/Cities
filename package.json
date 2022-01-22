@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "download-raw-data": "python scripts/run_queries.py raw-data/cities.txt raw-data/towns.txt raw-data/villages.txt"
   },
   "dependencies": {
     "@react-three/fiber": "^7.0.24",
