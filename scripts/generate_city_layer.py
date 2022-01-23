@@ -50,20 +50,21 @@ def generate_globe_data(files, output, size):
         y = int((height / 2) - lat * height / 180)
         # brightness = int(brightnessMul * min(math.log2(max(pop, 1)), 2**12) + 0.5)
         brightness = size // 2048
-        image.putpixel((x, y), min(image.getpixel((x, y)) + brightness, 255))
+        image.putpixel((x, y), 255)
+        # image.putpixel((x, y), min(image.getpixel((x, y)) + brightness, 255))
         # draw.rectangle((x-10, y-10, x+10, y+10), fill=64, outline=0)
 
     print("Saving")
     image.save(output)
 
 if __name__ == "__main__":
-    size = 2048
+    size = 4096
     generate_globe_data(
         # 2,3,4,5,6,7
         # 
         # glob.glob("raw-data/villages.94.csv"), 
         # glob.glob("raw-data/*.csv"),
         ["raw-data/cities.csv", "raw-data/towns.csv", "raw-data/villages.csv"],
-        "public/cities-%dx%d.jpeg" % (size, size//2),
+        "public/cities_%dx%d.jpeg" % (size, size//2),
         size
     )

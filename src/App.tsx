@@ -3,13 +3,17 @@ import './App.css'
 import { Canvas, useLoader, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
+function CityPoints() {
+
+}
+
 function Planet() {
   const planet = useRef<THREE.Group>(null!)
   const planetContainer = useRef<THREE.Group>(null!)
   const [map, topologyMap, roughnessMap] = useLoader(THREE.TextureLoader, [
     '/colour_1024x512.jpg', 
     '/topology_1024x512.jpg',
-    '/roughness_3600x1800.jpg'
+    '/roughness_3600x1800.jpg',
   ])
   useFrame(() => {
     planet.current.rotation.y += 0.002
@@ -25,6 +29,9 @@ function Planet() {
           displacementMap={topologyMap}
           displacementScale={0.2}
           roughnessMap={roughnessMap}
+          // emissive={new THREE.Color("white")}
+          // emissiveMap={emissiveMap}
+          // emissiveIntensity={1}
           />
       </mesh>
     </group>
