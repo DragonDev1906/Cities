@@ -1,0 +1,4 @@
+/* split_count=20 */
+[out:csv(::id, "name", "name:en", ::lat, ::lon, population, capital, "openGeoDB:type", is_in; true; ";")];
+node["place"="town"](x,x,x,x);
+out;
