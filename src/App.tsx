@@ -8,8 +8,12 @@ function App() {
       <h1 className="App-Title">
         Cities
       </h1>
-      <div className="App-Globe">
-        <Globe />
+      <div className="App-GlobePadding">
+        <div className="App-GlobeAspectRatioControl">
+          <div>
+            <Globe />
+          </div>
+        </div>
       </div>
     </div>
   )
