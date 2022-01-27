@@ -1,11 +1,23 @@
 .App {
   text-align: center;
-  height: 100vh;
   background-color: black;
+  display: flex;
+  color: white;
+}
+.App-Title {
+  flex: 1;
+  background-color: red;
+}
+.App-Globe {
+  /* flex: 1; */
+  flex: 1;
+  max-height: 66vh;
+  height: auto;
+  padding: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
