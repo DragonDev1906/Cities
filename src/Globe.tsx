@@ -37,8 +37,8 @@ function Globe() {
   return (
     <Canvas camera={{position: [0,0,27], fov: 45}}>
     <Suspense fallback={null}>
-        <ambientLight args={["0x888"]} />
-        <directionalLight args={["#fff", 5]} position={[1,1,1]} />
+        <ambientLight args={["#888"]} />
+        <directionalLight args={["#F4E99B", 5]} position={[1,1,1]} />
         <Planet />
     </Suspense>
     </Canvas>
