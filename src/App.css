@@ -3,17 +3,24 @@
   background-color: black;
   display: flex;
   color: white;
+  flex-direction: column;
 }
 .App-Title {
-  flex: 1;
+  flex: 2;
   background-color: red;
 }
 .App-Globe {
   /* flex: 1; */
   flex: 1;
-  max-height: 66vh;
-  height: auto;
+  height: min(66vh, 40vw);
+  width: min(66vh, 40vw);
   padding: 2em;
+}
+
+@media only screen and (min-width: 480px) {
+  .App {
+    flex-direction: row;
+  }
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
