@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-image: radial-gradient(250vw 100% at 10% 100%, #000 60%, #111 100%);
   display: flex;
   color: white;
   flex-direction: column;
@@ -46,6 +46,7 @@
   .App {
     /* Place the globe right of the title on large screens */
     flex-direction: row;
+    background-image: radial-gradient(100vw 250vh at 100% 10%, #000 40%, #111 100%);
   }
   .App-Header {
     padding: 2em;
