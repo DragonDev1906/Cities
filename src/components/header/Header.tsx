@@ -19,7 +19,7 @@ function Header() {
           <button>Connect Wallet</button>
         </div>
       </div>
-      <div className="Header-GlobePadding">
+      <div className="Header-Globe">
         <AspectRatioControl>
           <Globe />
         </AspectRatioControl>
