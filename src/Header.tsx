@@ -1,5 +1,5 @@
 import './Header.css'
-import Globe from './Globe'
+import { Globe } from './components'
 
 
 function Header() {
