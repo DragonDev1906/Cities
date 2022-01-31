@@ -1,5 +1,5 @@
 import './Header.css'
-import { Globe, AspectRatioControl } from '..'
+import { Globe, AspectRatioControl, Navigation } from '..'
 
 
 function Header() {
@@ -15,11 +15,7 @@ function Header() {
           </p>
         </div>
         <div className="Header-Navigation">
-          <nav>
-            <a>Home</a>
-            <a>Inventory</a>
-            <a>Leaderboard</a>
-          </nav>
+          <Navigation />
           <button>Connect Wallet</button>
         </div>
       </div>
