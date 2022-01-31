@@ -50,6 +50,6 @@
     gap: 1em;
   }
   .Header-Text {
-    margin-right: 5vw;
+    margin: auto 5vw;
   }
 }
