@@ -1,0 +1,22 @@
+.AspectRatioControl-Outer {
+  /* Make sure the Globe has an aspect ratio of 1:1 */
+  /* The width also makes the size responsive based on the screen size (basically giving a maximum size based on vw and vh */
+  padding-top: 100%;
+  width: min(50vh, 80vw);
+  position: relative;
+}
+.AspectRatioControl-Inner {
+  /* This additional div is needed when using the padding-top: 100%; trick */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 550px) {
+  .AspectRatioControl-Outer {
+    /* Don't allow the globe to take a large amount of the width, such that the title still has space */
+    width: min(70vh, 40vw);
+  }
+}

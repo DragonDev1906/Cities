@@ -1,5 +1,5 @@
 import './Header.css'
-import { Globe } from './components'
+import { Globe, AspectRatioControl } from '..'
 
 
 function Header() {
@@ -24,11 +24,9 @@ function Header() {
         </div>
       </div>
       <div className="Header-GlobePadding">
-        <div className="Header-GlobeAspectRatioControl">
-          <div>
-            <Globe />
-          </div>
-        </div>
+        <AspectRatioControl>
+          <Globe />
+        </AspectRatioControl>
       </div>
     </div>
   )
