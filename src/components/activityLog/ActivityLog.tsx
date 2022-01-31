@@ -1,7 +1,3 @@
-import './Header.css'
-import Globe from './Globe'
-
-
 function Header() {
   return (
     <div className="ActivityLog">

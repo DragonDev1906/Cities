@@ -1,6 +1,5 @@
 import './App.css'
-import Header from './Header'
-import ActivityLog from './ActivityLog'
+import { Header, ActivityLog } from './components'
 import { getPriorityConnector, initializeConnector } from '@web3-react/core'
 import { MetaMask } from '@web3-react/metamask'
 
