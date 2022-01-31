@@ -14,10 +14,7 @@ function Header() {
             Buy, hold and trade cities. Earn ERC-721 achievement tokens and climb the Leaderboard.
           </p>
         </div>
-        <div className="Header-Navigation">
-          <Navigation />
-          <button>Connect Wallet</button>
-        </div>
+        <Navigation />
       </div>
       <div className="Header-Globe">
         <AspectRatioControl>

@@ -1,0 +1,70 @@
+.Navigation-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 3vw;
+}
+  
+.Navigation {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    width: 100%;
+    align-items: stretch;
+    gap: 0.25em;
+}
+
+.Navigation>a {
+    display: block;
+    flex: 1;
+    text-align: center;
+    padding: 0.25em 0.25em 0.25em 1em;
+    cursor: pointer;
+    border-left: 1px solid green;
+    max-width: 45em;
+    text-align: left;
+    max-width: 250px;
+}
+
+.Navigation-ConnectWallet {
+    max-height: 4em;
+    margin: auto;
+    display: block;
+    flex: 1;
+    padding: 0.75em 1em;
+    background: transparent;
+    border: 1px solid green;
+    color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 950px) {
+    .Navigation-Container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .Navigation {
+        flex-direction: row;
+        flex: 8;
+        gap: 0.5em;
+        height: auto;
+        margin: auto;
+    }
+    .Navigation>a {
+        padding: 0.25em 0.5em;
+        max-width: 999999;
+        border-bottom: 1px solid green;
+        border-left: 0;
+        text-align: center;
+    }
+    .Navigation-ConnectWallet {
+        flex: 2;
+    }
+}
+
+@media only screen and (min-width: 1085px) {
+    .Navigation-Container {
+        gap: 3vw;
+    }
+}
