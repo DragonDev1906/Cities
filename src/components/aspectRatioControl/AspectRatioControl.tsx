@@ -5,7 +5,7 @@ export interface Props {
   children: React.ReactNode
 }
 
-function Header(props: Props) {
+function AspectRatioControl(props: Props) {
   return (
     <div className="AspectRatioControl-Outer">
       <div className="AspectRatioControl-Inner">
@@ -15,4 +15,4 @@ function Header(props: Props) {
   )
 }
 
-export default Header
+export default AspectRatioControl

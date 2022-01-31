@@ -1,4 +1,4 @@
-function Header() {
+function ActivityLog() {
   return (
     <div className="ActivityLog">
         {/* 
@@ -27,4 +27,4 @@ function Header() {
   )
 }
 
-export default Header
+export default ActivityLog
